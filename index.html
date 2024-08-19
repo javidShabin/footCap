@@ -11,30 +11,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="bg-white py-6 shadow-lg sticky top-0 left-0 z-10 ">
-      <div class="container mx-auto px-4 w-[90%] flex justify-between items-center">
+    <header class="bg-white py-6 shadow-lg sticky top-0 left-0 z-10">
+      <div
+        class="container mx-auto px-4 w-[90%] flex justify-between items-center"
+      >
         <!-- Logo -->
         <div class="logo">
           <img src="./images/logo.svg" alt="Logo" class="h-10 w-auto" />
         </div>
 
         <!-- Navigation (hidden on small screens) -->
-        <ul class="hidden md:flex gap-10 text-gray-700 ">
-          <li><a href="#" class="hover:text-orange-500 transition font-semibold">Home</a></li>
-          <li><a href="#" class="hover:text-orange-500 transition font-semibold">About</a></li>
+        <ul class="hidden md:flex gap-10 text-gray-700">
           <li>
-            <a href="#" class="hover:text-orange-500 transition font-semibold">Products</a>
+            <a href="#" class="hover:text-orange-500 transition font-semibold"
+              >Home</a
+            >
           </li>
-          <li><a href="#" class="hover:text-orange-500 transition font-semibold">Shop</a></li>
-          <li><a href="#" class="hover:text-orange-500 transition font-semibold">Blog</a></li>
           <li>
-            <a href="#" class="hover:text-orange-500 transition font-semibold">Contact</a>
+            <a href="#" class="hover:text-orange-500 transition font-semibold"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition font-semibold"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition font-semibold"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition font-semibold"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition font-semibold"
+              >Contact</a
+            >
           </li>
         </ul>
 
         <!-- Icons -->
-        <div class="icons flex gap-5 text-gray-700 text-2xl ">
-          <i class="ri-search-line text-xl hover:text-orange-500 transition"></i>
+        <div class="icons flex gap-5 text-gray-700 text-2xl">
+          <i
+            class="ri-search-line text-xl hover:text-orange-500 transition"
+          ></i>
           <i class="ri-user-line text-xl hover:text-orange-500 transition"></i>
           <i class="ri-heart-line text-xl hover:text-orange-500 transition"></i>
           <i
@@ -57,7 +81,9 @@
       <div id="mobile-menu" class="hidden md:hidden bg-gray-100 py-4">
         <ul class="flex flex-col items-center gap-4 text-gray-700">
           <li><a href="#" class="hover:text-orange-500 transition">Home</a></li>
-          <li><a href="#" class="hover:text-orange-500 transition">About</a></li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition">About</a>
+          </li>
           <li>
             <a href="#" class="hover:text-orange-500 transition">Products</a>
           </li>
@@ -70,11 +96,35 @@
       </div>
     </header>
     <main>
-        <section style="background-image: url('./images/hero-banner.png'); background-size: cover; background-position: center; height: 87vh;" class="relative">
-            <div class="container">
-                <h1>New Summer<strong>Shoe Collection</strong></h1>
-            </div>
-        </section>
+      <section
+        style="
+          background-image: url('./images/hero-banner.png');
+          background-size: cover;
+          background-position: center;
+          height: 87vh;
+        "
+        class="hero relative flex items-center"
+      >
+        <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-left">
+          <h1
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+          >
+            New Summer <br /><strong> Shoe Collection</strong>
+          </h1>
+          <p
+            class="mb-6 text-sm sm:text-base md:text-lg lg:text-xl max-w-[46ch]"
+          >
+            Competently expedite alternative benefits whereas leading-edge
+            catalysts for change. Globally leverage an expanded array of
+            leadership.
+          </p>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-full transition duration-300"
+          >
+            Explore
+          </button>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
