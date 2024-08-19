@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="bg-white py-6 shadow-lg ">
+    <header class="bg-white py-6 shadow-lg sticky top-0 left-0 z-10 ">
       <div class="container mx-auto px-4 w-[90%] flex justify-between items-center">
         <!-- Logo -->
         <div class="logo">
@@ -33,7 +33,7 @@
         </ul>
 
         <!-- Icons -->
-        <div class="icons flex gap-5 text-gray-700">
+        <div class="icons flex gap-5 text-gray-700 text-2xl ">
           <i class="ri-search-line text-xl hover:text-orange-500 transition"></i>
           <i class="ri-user-line text-xl hover:text-orange-500 transition"></i>
           <i class="ri-heart-line text-xl hover:text-orange-500 transition"></i>
@@ -69,7 +69,13 @@
         </ul>
       </div>
     </header>
-    <main></main>
+    <main>
+        <section style="background-image: url('./images/hero-banner.png'); background-size: cover; background-position: center; height: 87vh;" class="relative">
+            <div class="container">
+                <h1>New Summer<strong>Shoe Collection</strong></h1>
+            </div>
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>
