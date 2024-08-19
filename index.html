@@ -11,25 +11,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="bg-white py-6 shadow-lg ">
+      <div class="container mx-auto px-4 w-[90%] flex justify-between items-center">
+        <!-- Logo -->
         <div class="logo">
-          <img src="./images/logo.svg" alt="" />
+          <img src="./images/logo.svg" alt="Logo" class="h-10 w-auto" />
         </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+
+        <!-- Navigation (hidden on small screens) -->
+        <ul class="hidden md:flex gap-10 text-gray-700 ">
+          <li><a href="#" class="hover:text-orange-500 transition font-semibold">Home</a></li>
+          <li><a href="#" class="hover:text-orange-500 transition font-semibold">About</a></li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition font-semibold">Products</a>
+          </li>
+          <li><a href="#" class="hover:text-orange-500 transition font-semibold">Shop</a></li>
+          <li><a href="#" class="hover:text-orange-500 transition font-semibold">Blog</a></li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition font-semibold">Contact</a>
+          </li>
         </ul>
-        <div class="icons">
-          <i class="ri-search-line"></i>
-          <i class="ri-user-line"></i>
-          <i class="ri-heart-line"></i>
-          <i class="ri-shopping-bag-2-line"></i>
+
+        <!-- Icons -->
+        <div class="icons flex gap-5 text-gray-700">
+          <i class="ri-search-line text-xl hover:text-orange-500 transition"></i>
+          <i class="ri-user-line text-xl hover:text-orange-500 transition"></i>
+          <i class="ri-heart-line text-xl hover:text-orange-500 transition"></i>
+          <i
+            class="ri-shopping-bag-2-line text-xl hover:text-orange-500 transition"
+          ></i>
         </div>
+
+        <!-- Hamburger Menu for mobile -->
+        <div class="md:hidden">
+          <button
+            id="menu-btn"
+            class="text-gray-700 text-3xl focus:outline-none"
+          >
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-100 py-4">
+        <ul class="flex flex-col items-center gap-4 text-gray-700">
+          <li><a href="#" class="hover:text-orange-500 transition">Home</a></li>
+          <li><a href="#" class="hover:text-orange-500 transition">About</a></li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition">Products</a>
+          </li>
+          <li><a href="#" class="hover:text-orange-500 transition">Shop</a></li>
+          <li><a href="#" class="hover:text-orange-500 transition">Blog</a></li>
+          <li>
+            <a href="#" class="hover:text-orange-500 transition">Contact</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main></main>
